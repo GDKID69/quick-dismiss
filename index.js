@@ -5,7 +5,7 @@ const EphemeralAccessories = getModule(m => m.default?.displayName === "Ephemera
 
 module.exports = class QuickDismiss extends Plugin {
     startPlugin() {
-        inject("thisInject", EphemeralAccessories, "default", (args, res) => {
+        inject("quickDInject", EphemeralAccessories, "default", (args, res) => {
             const msgNode = document.getElementById(`chat-messages-${args[0].message.id}`);
             if (!msgNode) return res;
 
@@ -19,6 +19,6 @@ module.exports = class QuickDismiss extends Plugin {
     };
 
     pluginWillUnload() {
-        uninject("thisInject");
+        uninject("quickDInject");
     };
 };
