@@ -1,0 +1,7 @@
+{
+    "name": "Quick Dismiss",
+    "description": "Dismiss ephemeral messages simply by right clicking",
+    "version": "1.0.0",
+    "author": "gdkid#0111",
+    "license": "MIT"
+}
